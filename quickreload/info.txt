@@ -7,5 +7,6 @@
 	"GameVersion": 2.04,
 	"Date": "07/09/2021",
 	"Dependencies": [],
-	"Disabled": 1
+	"Disabled": 1,
+	"AllowSteamAchievs": 1
 }
