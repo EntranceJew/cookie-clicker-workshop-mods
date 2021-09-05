@@ -5,7 +5,7 @@ Here they are.
 Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
 
 ## Installing
-1. Download this repository.
+1. [Download this repository](https://github.com/EntranceJew/cookie-clicker-workshop-mods/archive/refs/heads/main.zip).
 2. Extract the files somewhere.
 3. Move the folders of the mods you want into `<yoursteaminstall>\steamapps\common\Cookie Clicker\resources\app\mods\local`, you can get to this from the mods menu.
 4. Enable them in-game with the mods menu.
