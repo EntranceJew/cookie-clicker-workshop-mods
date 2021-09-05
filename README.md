@@ -4,6 +4,12 @@ Here they are.
 ## FYI
 Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
 
+## Installing
+1. Download this repository.
+2. Extract the files somewhere.
+3. Move the folders of the mods you want into `<yoursteaminstall>\steamapps\common\Cookie Clicker\resources\app\mods\local`, you can get to this from the mods menu.
+4. Enable them in-game with the mods menu.
+
 ## Vanilla Mods
 
 ### [quickreload](/quickreload)
