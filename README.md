@@ -3,7 +3,7 @@ Here they are.
 
 ## FYI
 - Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
-- Edit `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\start.js` and change `let DEV=false;` on line 7 to be `let DEV=true;` to get chrome devtools.
+- Edit `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\start.js` and change `let DEV=0;` on line 11 to be `let DEV=1;` to get chrome devtools.
 
 ## Installing
 1. [Download this repository](https://github.com/EntranceJew/cookie-clicker-workshop-mods/archive/refs/heads/main.zip).
