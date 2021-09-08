@@ -24,3 +24,6 @@ You need to install this first, if you don't then I'll be upset!
 
 ### [TwitchMod](/TwitchMod)
 Let people say words to you and your cookies.
+
+### [RiskyClickSpell](/RiskyClickSpell)
+Adds a spell that adds the innovative technology of unclicking the cookie, or just clicking on it like normal I guess.
