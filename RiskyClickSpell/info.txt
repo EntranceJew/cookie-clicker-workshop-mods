@@ -1,0 +1,12 @@
+{
+	"Name": "Risky Click Spell",
+	"ID": "RiskyClickSpell",
+	"Author": "EntranceJew",
+	"Description": "Adds a spell that lets you click a cookie, maybe.",
+	"ModVersion": 1,
+	"GameVersion": 2.042,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+  "AllowSteamAchievs": 1
+}
