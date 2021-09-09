@@ -73,13 +73,12 @@ RiskyClickSpell.launch = function(){
       CCSE.AppendStatsVersionNumber(RiskyClickSpell.name, RiskyClickSpell.version);
     });
   
-    // let dir = CCSE.GetModPath(RiskyClickSpell.id);
+    let dir = CCSE.GetModPath(RiskyClickSpell.id);
     CCSE.NewSpell("risky click", {
       name:loc("Risky Click"),
       desc:loc("Cookie gets clicked a single time."),
       failDesc:loc("You know what? *unclicks your cookie*"),
-      // icon:[0,0, dir + "/img/icon.png"],
-      icon:[12,27],
+      icon:[0,0, dir + "/img/icon.png"],
       costMin:1,
       costPercent:0.01,
       win:function()

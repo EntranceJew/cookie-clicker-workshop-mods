@@ -1,0 +1,12 @@
+{
+	"Name": "Skull Trumpet GCSFX",
+	"ID": "SkullTrumpetGCSFX",
+	"Author": "EntranceJew",
+	"Description": "Adds a skull trumpet option to the golden cookie SFX picker.",
+	"ModVersion": 1,
+	"GameVersion": 2.042,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+  "AllowSteamAchievs": 1
+}
