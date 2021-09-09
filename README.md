@@ -1,19 +1,6 @@
 # cookie-clicker-workshop-mods
 
-Here they are.
-
-## FYI
-
-- Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
-- Edit `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\start.js` and change `let DEV=0;` on line 11 to be `let DEV=1;` to get chrome devtools.
-  - _If you do this, then you will not get achievements as of **2.042**._
-
-## Installing
-
-1. [Download this repository](https://github.com/EntranceJew/cookie-clicker-workshop-mods/archive/refs/heads/main.zip).
-2. Extract the files somewhere.
-3. Move the folders of the mods you want into `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\mods\local`, you can get to this from the mods menu.
-4. Enable them in-game with the mods menu.
+TODO: make a [directory](/directory.md) of mods from other sources, too.
 
 ## Vanilla Mods
 
@@ -48,6 +35,13 @@ Press `ctrl-R` to reload the game and your mods instantly.
 ![see this whenever you want](https://i.imgur.com/YvmWqyx.png)
 > _See this whenever you want!_
 
+### [spawngolden](/spawngolden)
+
+Press `ctrl-G` to spawn a Golden Cookie. Technically it will prompt every shimmer type to spawn, so it will spawn reindeers during christmas.
+
+![do it for him](https://i.imgur.com/WPK5Ua8.png)
+> _Do it for him._
+
 ## [CCSE](https://klattmose.github.io/CookieClicker/#cookie-clicker-script-extender--steam) Mods
 
 You need to install this first, if you don't then I'll be upset!
@@ -70,6 +64,16 @@ Gives you a new `Skull Trumpet` option for the `Golden cookie sound selector` up
 
 ![sound selector](https://i.imgur.com/ufx9pPO.png)
 
+### [TimeBendSpell](/TimeBendSpell)
+
+Adds a new spell that temporarily modifies the framerate cap and other events that use time such as the bank and farm minigames. The effect of the spell scales with the number of time machines owned, and the duration scales with the level of your time machines.
+
+![new spell slot](https://i.imgur.com/HjSnL1O.png)
+
+![new buff](https://i.imgur.com/NSqTE38.png)
+
+![new anti-buff](https://i.imgur.com/BFJyCMc.png)
+
 ### [TwitchMod](/TwitchMod)
 
 Adds basic Twitch Chat support to the game. Other mods can build off of this one.
@@ -77,3 +81,16 @@ Adds basic Twitch Chat support to the game. Other mods can build off of this one
 ![chat message](https://i.imgur.com/3Hil0Dh.png)
 
 ![twitch login options](https://i.imgur.com/SCjFfCS.png)
+
+## FYI
+
+- Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
+- Edit `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\start.js` and change `let DEV=0;` on line 11 to be `let DEV=1;` to get chrome devtools.
+  - _If you do this, then you will not get achievements as of **2.042**._
+
+## Installing
+
+1. [Download this repository](https://github.com/EntranceJew/cookie-clicker-workshop-mods/archive/refs/heads/main.zip).
+2. Extract the files somewhere.
+3. Move the folders of the mods you want into `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\mods\local`, you can get to this from the mods menu.
+4. Enable them in-game with the mods menu.
