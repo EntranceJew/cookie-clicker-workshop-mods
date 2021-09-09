@@ -2,7 +2,7 @@
 
 A collection of Cookie Clicker mods that work with the Steam workshop version.
 
-## [EntranceJew's Mods](/..)
+## [EntranceJew's Mods](https://github.com/EntranceJew/cookie-clicker-workshop-mods)
 
 Great news, just go back up a directory.
 
