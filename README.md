@@ -16,7 +16,7 @@ Enables the developer widget + upgrades shortcut that isn't in the steam version
 
 Enables the `1/10000` chance of spawning toys. Based off of [GuaranteeWinklers](https://github.com/klattmose/klattmose.github.io/tree/master/CookieClicker/SteamMods/GuaranteeWinklers).
 
-![these things](https://i.imgur.com/uaWV6oH.gif)
+![these things](https://i.imgur.com/GLZIwar.gif)
 > _These things._
 
 ### [newsfixer](/newsfixer)
