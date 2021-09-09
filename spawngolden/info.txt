@@ -1,0 +1,12 @@
+{
+	"Name": "Spawn Golden",
+	"ID": "spawngolden",
+	"Author": "Y0mu & EntranceJew",
+	"Description": "ctrl+h spawns golden cookie",
+	"ModVersion": 1,
+	"GameVersion": 2.04,
+	"Date": "09/06/2021",
+	"Dependencies": [],
+	"Disabled": 1,
+	"AllowSteamAchievs": 1
+}
