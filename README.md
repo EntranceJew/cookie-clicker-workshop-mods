@@ -1,6 +1,6 @@
 # cookie-clicker-workshop-mods
 
-TODO: make a [directory](/directory.md) of mods from other sources, too.
+Also check out this [directory](/directory.md) of all the other Steam Workshop compatible mods I know about.
 
 ## Vanilla Mods
 
