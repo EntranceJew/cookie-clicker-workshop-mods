@@ -1,11 +1,11 @@
 Game.registerMod("spawngolden", {
   init: function () {
     AddEvent(window, 'keydown', function (e) {
-      //ctrl-h spanws a golden cookie
-      if (!Game.OnAscend && Game.AscendTimer == 0 && e.ctrlKey && e.keyCode == 72) {
+      // ctrl-g spanws a golden cookie
+      if (!Game.OnAscend && Game.AscendTimer == 0 && e.ctrlKey && e.keyCode == 71) {
         for (var i in Game.shimmerTypes) {
           var me = Game.shimmerTypes[i];
-          //no shimmer spawned for this type? check the timer and try to spawn one
+          // no shimmer spawned for this type? check the timer and try to spawn one
           if (me.spawnConditions() && !me.spawned) {
             var newShimmer = new Game.shimmer(i);
             newShimmer.spawnLead = 1;
