@@ -8,7 +8,13 @@ Great news, just go back up a directory.
 
 ## [klattmose's Mods](https://klattmose.github.io/CookieClicker/)
 
-klattmose maintains their own directory of their own mods, including CCSE which a lot of other mods depend on.
+klattmose maintains their own directory of their own mods, including CCSE which a lot of other mods depend on. [[sources]](https://github.com/klattmose/klattmose.github.io/tree/master/CookieClicker/SteamMods)
+
+## [staticvariablejames' Mods](https://staticvariablejames.github.io/CookieClickerSteamMods/)
+
+staticvariablejames also maintains a directory of handy mods they made. [[source]](https://github.com/staticvariablejames/CookieClickerSteamMods/)
+
+contains the world renowned: **InsugarTrading**, **SpicedCookies**, and **ChooseYourOwnLump**.
 
 ## OrchidAlloy's Mods
 
