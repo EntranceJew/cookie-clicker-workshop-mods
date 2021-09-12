@@ -16,6 +16,18 @@ staticvariablejames also maintains a directory of handy mods they made. [[source
 
 contains the world renowned: **InsugarTrading**, **SpicedCookies**, and **ChooseYourOwnLump**.
 
+## Icehawk78's Mods
+
+### [Frozen Cookies](https://github.com/Icehawk78/FrozenCookies)
+
+World famous mod for doing cookie related things.
+
+## Chakaa's Mods
+
+### [Cookie Garden Helper Reloaded](https://github.com/Chakaa/cookie-garden-helper-reloaded)
+
+Makes managing your garden a little easier.
+
 ## OrchidAlloy's Mods
 
 ### [FortuneHelper](https://steamcommunity.com/sharedfiles/filedetails/?id=2595513328)
