@@ -4,6 +4,8 @@ TimeBendSpell.id = 'TimeBendSpell';
 TimeBendSpell.version = '1.0';
 TimeBendSpell.GameVersion = '2.042';
 
+// TODO: bug on having this mod enabled when beginning a fresh save
+
 TimeBendSpell.launch = function(){
   TimeBendSpell.originalFPS = Game.fps;
   TimeBendSpell.currentTimeRate = 1;
@@ -31,13 +33,14 @@ TimeBendSpell.launch = function(){
 		}
     AddLanguage('EN', 'english', locstrs, true);
 
+    
+    TimeBendSpell.ComputeTime = function(){
+      return (TimeBendSpell.accelerationFactor + TimeBendSpell.decelerationFactor)/2;
+    }
     TimeBendSpell.SetTimeRates = function(acc,dec){
       TimeBendSpell.accelerationFactor = acc||TimeBendSpell.accelerationFactor;
       TimeBendSpell.decelerationFactor = dec||TimeBendSpell.decelerationFactor;
       TimeBendSpell.RecomputeTimeEffects();
-    }
-    TimeBendSpell.ComputeTime = function(){
-      return (TimeBendSpell.accelerationFactor + TimeBendSpell.decelerationFactor)/2;
     }
     TimeBendSpell.RecomputeTimeEffects = function(){
       let rate = TimeBendSpell.ComputeTime();
@@ -141,6 +144,8 @@ TimeBendSpell.launch = function(){
         Game.Popup('<div style="font-size:80%;">'+loc("Backfire!")+'<br>'+loc("Time decelerated!")+'</div>',Game.mouseX,Game.mouseY);
       },
     });
+
+    TimeBendSpell.SetTimeRates(1, 1);
   
     TimeBendSpell.isLoaded = 1;
     if (Game.prefs.popups) Game.Popup(TimeBendSpell.name + ' loaded!');
