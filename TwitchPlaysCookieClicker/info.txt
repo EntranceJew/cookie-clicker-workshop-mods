@@ -1,0 +1,12 @@
+{
+	"Name": "Twitch Plays Cookie Clicker",
+	"ID": "Twitch Plays Cookie Clicker",
+	"Author": "EntranceJew",
+	"Description": "Allows strangers to absolutely mess things up.",
+	"ModVersion": 1.0,
+	"GameVersion": 2.04,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+	"AllowSteamAchievs": 1
+}

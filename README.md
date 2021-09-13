@@ -1,6 +1,19 @@
 # cookie-clicker-workshop-mods
 
+All the mods I worked on so far.
+
 Also check out this [directory](/directory.md) of all the other Steam Workshop compatible mods I know about.
+
+I also have [mod notes](/mod_notes.md) if you want to learn about modding yourself.
+
+## Installing
+
+This applies to each of the mods you'll see below so if you don't read this part you'll be sad.
+
+1. [Download this repository](https://github.com/EntranceJew/cookie-clicker-workshop-mods/archive/refs/heads/main.zip).
+2. Extract the files somewhere.
+3. Move the folders of the mods you want into `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\mods\local`, you can get to this from the mods menu.
+4. Enable them in-game with the mods menu.
 
 ## Vanilla Mods
 
@@ -76,21 +89,14 @@ Adds a new spell that temporarily modifies the framerate cap and other events th
 
 ### [TwitchMod](/TwitchMod)
 
-Adds basic Twitch Chat support to the game. Other mods can build off of this one.
+Adds basic Twitch Chat support to the game. Other mods can build off of this one by registering commands.
 
 ![chat message](https://i.imgur.com/3Hil0Dh.png)
 
 ![twitch login options](https://i.imgur.com/SCjFfCS.png)
 
-## FYI
+### [Twitch Plays Cookie Clicker](/TwitchPlaysCookieClicker)
 
-- Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
-- Edit `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\start.js` and change `let DEV=0;` on line 11 to be `let DEV=1;` to get chrome devtools.
-  - _If you do this, then you will not get achievements as of **2.042**._
+Adds a bunch of commands to [TwitchMod](#twitchmod) that allow chat to control your game.
 
-## Installing
-
-1. [Download this repository](https://github.com/EntranceJew/cookie-clicker-workshop-mods/archive/refs/heads/main.zip).
-2. Extract the files somewhere.
-3. Move the folders of the mods you want into `<yoursteaminstall>\SteamApps\common\Cookie Clicker\resources\app\mods\local`, you can get to this from the mods menu.
-4. Enable them in-game with the mods menu.
+![command index](https://i.imgur.com/u9S1eGw.png)
