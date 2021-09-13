@@ -6,7 +6,7 @@
 	"ModVersion": 1.0,
 	"GameVersion": 2.04,
 	"Date": "07/09/2021",
-	"Dependencies": ["CCSE"],
+	"Dependencies": ["CCSE", "TwitchMod"],
 	"Disabled": 1,
 	"AllowSteamAchievs": 1
 }
