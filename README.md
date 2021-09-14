@@ -32,6 +32,13 @@ Enables the `1/10000` chance of spawning toys. Based off of [GuaranteeWinklers](
 ![these things](https://i.imgur.com/GLZIwar.gif)
 > _These things._
 
+### [EnableParty](/EnableParty)
+
+Enables the easter-egg that is still in the Steam version.
+
+![the colors](https://i.imgur.com/Wkl0eIH.gif)
+> I can see forever.
+
 ### [newsfixer](/newsfixer)
 
 Fixes the news reading as `News : lowercase headline` and makes it into `News: Uppercase headline`, for those of us that can detect whitespace anomalies.
