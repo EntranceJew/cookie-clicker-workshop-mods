@@ -66,6 +66,10 @@ Press `ctrl-G` to spawn a Golden Cookie. Technically it will prompt every shimme
 
 You need to install this first, if you don't then I'll be upset!
 
+### [EasterEggs](/EasterEggs)
+
+The same as [EnableParty](#enableparty), [GuaranteeToys](#guaranteetoys), and [GuaranteeWinklers](https://github.com/klattmose/klattmose.github.io/tree/master/CookieClicker/SteamMods/GuaranteeWinklers) but all as toggleable options. Has a cleanup function for disabling PARTY.
+
 ### [RiskyClickSpell](/RiskyClickSpell)
 
 Adds a spell that adds the innovative technology of unclicking the cookie, or just clicking on it like normal I guess.

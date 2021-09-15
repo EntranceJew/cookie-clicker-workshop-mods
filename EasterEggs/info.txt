@@ -1,0 +1,12 @@
+{
+	"Name": "Easter Eggs",
+	"ID": "EasterEggs",
+	"Author": "EntranceJew",
+	"Description": "Allows you to turn on or off little rare easter eggs.",
+	"ModVersion": 1.0,
+	"GameVersion": 2.04,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+	"AllowSteamAchievs": 1
+}
