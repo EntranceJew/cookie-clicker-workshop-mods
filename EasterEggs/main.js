@@ -67,7 +67,6 @@ EasterEggs.launch = function(){
 	}
 
   EasterEggs.ToggleCheck = function(prefName, button, on, off, invert){
-    console.log(prefName, button, on, off, invert, EasterEggs.config[prefName]);
 		if(EasterEggs.config[prefName]){
 			l(button).removeAttribute('checked');
       l(button+'_label').innerHTML = off;

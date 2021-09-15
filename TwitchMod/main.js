@@ -129,7 +129,6 @@ TwitchMod.launch = function(){
           let parts = msg.split(/[ ]+/);
           let cmd = parts.shift();
           cmd = cmd.substring(prefix.length);
-          console.log("testing my balls", cmd, parts);
           TwitchMod.handleCommand(cmd, message, parts);
         } else {
           if (TwitchMod.config.MSG_SHOW) {
@@ -311,7 +310,6 @@ TwitchMod.launch = function(){
 	}
 
   TwitchMod.ToggleCommand = function(prefName, button, on, off, invert){
-    console.log(prefName, button, on, off, invert, TwitchMod.config.CMD_DISABLED[prefName]);
 		if(TwitchMod.config.CMD_DISABLED[prefName]){
 			l(button).removeAttribute('checked');
       l(button+'_label').innerHTML = off;
@@ -324,7 +322,6 @@ TwitchMod.launch = function(){
 	}
 
   TwitchMod.ToggleCheck = function(prefName, button, on, off, invert){
-    console.log(prefName, button, on, off, invert, TwitchMod.config[prefName]);
 		if(TwitchMod.config[prefName]){
 			l(button).removeAttribute('checked');
       l(button+'_label').innerHTML = off;

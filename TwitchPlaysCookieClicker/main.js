@@ -290,7 +290,6 @@ TPCC.launch = function(){
             const upgrade = Game.UpgradesInStore[i];
             if (upgrade.pool != 'toggle'){
               if (nid == reali){
-                console.log("i wanted to buy", Game.UpgradesInStore[i].name);
                 upgrade.buy();
               }
               reali++;
@@ -333,15 +332,12 @@ TPCC.launch = function(){
         // TODO: please gate this behind an upgrade or god will cry
         if (what == "upgrade") {
           let reali = 0;
-          console.log("sonic is logging in", what, id);
           for (var i=0;i<Game.UpgradesN;i++) {
             const upgrade = Game.UpgradesById[i];
             // no selling your permanent toggles
             // it's more chaotic that way
             if (upgrade.pool != 'toggle'){
-              console.log("chili dog coordinating", nid, id, Game.Has(upgrade.name), upgrade);
               if (nid == reali && Game.Has(upgrade.name)){
-                console.log("i wanted to sell", upgrade.name);
                 upgrade.unearn();
               }
               reali++;

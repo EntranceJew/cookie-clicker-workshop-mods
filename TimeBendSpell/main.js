@@ -44,7 +44,6 @@ TimeBendSpell.launch = function(){
     }
     TimeBendSpell.RecomputeTimeEffects = function(){
       let rate = TimeBendSpell.ComputeTime();
-      // console.log("recomputed rates", rate, "fps", (60*(1/rate))/2, "ratio", rate*60);
       TimeBendSpell.currentTimeRate = rate;
       Game.fps = (60 * (1/rate)) / 2;
       Game.Objects["Bank"].minigame.secondsPerTick = 60 * rate;
@@ -90,7 +89,6 @@ TimeBendSpell.launch = function(){
 				power:pow,
         add: true,
 				onDie:function(){
-          console.log("accelerated time died", Game.time);
           TimeBendSpell.SetTimeRates(1,1);
         },
 			};
@@ -124,7 +122,6 @@ TimeBendSpell.launch = function(){
       win:function(){
         let pow = 1/TimeBendSpell.GetPower();
         let duration = TimeBendSpell.GetDuration();
-        // setTimeout(function(){console.log("accel ended [debug realtime comparison]")}, 60000);
         Game.gainBuff(
           'accelerated time',
           duration,
@@ -135,7 +132,6 @@ TimeBendSpell.launch = function(){
       fail:function(){
         let pow = TimeBendSpell.GetPower(true);
         let duration = TimeBendSpell.GetDuration();
-        // setTimeout(function(){console.log("decel ended [debug realtime comparison]")}, 60000);
         Game.gainBuff(
           'decelerated time',
           duration,
