@@ -66,6 +66,16 @@ Press `ctrl-G` to spawn a Golden Cookie. Technically it will prompt every shimme
 
 You need to install this first, if you don't then I'll be upset!
 
+### [RigidelAlert](/RigidelAlert)
+
+Adds an indicator to show whether or not Rigidel is satisfied with your current buildings, so that you can mute Temples/The Pantheon.
+
+![happy rigidel](https://i.imgur.com/j5XNQCv.png)
+> Happy Rigidel
+
+![unhappy Rigidel](https://i.imgur.com/KEIfCQx.png)
+> Unhappy Rigidel, 1 building away from order.
+
 ### [BulkBuyModifier](/BulkBuyModifier)
 
 Allows you to replace the buy/sell options with your own custom denominations. Use `shift` to step up a denomination, `ctrl` to move down a denomination, and `shift+ctrl` to swap between buy/sell mode.

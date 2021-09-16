@@ -1,0 +1,12 @@
+{
+	"Name": "Rigidel Alert",
+	"ID": "RigidelAlert",
+	"Author": "EntranceJew",
+	"Description": "Shows you whether or not Rigidel is satisfied.",
+	"ModVersion": 1,
+	"GameVersion": 2.042,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+  "AllowSteamAchievs": 1
+}
