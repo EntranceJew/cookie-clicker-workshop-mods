@@ -1,50 +1,32 @@
 if(BulkBuyModifier === undefined) var BulkBuyModifier = {};
 BulkBuyModifier.name = 'Bulk Buy Modifier';
 BulkBuyModifier.id = 'BulkBuyModifier';
-BulkBuyModifier.version = '1.0';
+BulkBuyModifier.version = '1.1';
 BulkBuyModifier.GameVersion = '2.042';
 
 BulkBuyModifier.launch = function(){
   BulkBuyModifier.init = function(){
     // let dir = CCSE.GetModPath(BulkBuyModifier.id);
-    // BulkBuyModifier.styles = `
-    // #BulkBuyModifierHolder {
-    //   position: absolute;
-    //   font-weight: bold;
-    //   top: 24px;
-    //   right: -11px;
-    //   width: 48px;
-    //   text-align: center;
-    // }
-
-    // #BulkBuyModifierIcon {
-    //   pointer-events: none;
-    //   position: absolute;
-    //   width: 48px;
-    //   height: 48px;
-    //   margin-left: 0;
-    //   margin-right: 0;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
-
-    // #BulkBuyModifierAmount {
-    //   z-index: 10;
-    //   text-shadow: 0px 1px 0px #000, 0px 0px 6px #ff00e4;
-    //   color: #f01700;
-    //   flex: 0 0 48px;
-    //   font-size: 24px;
-    //   font-family: 'Merriweather', Georgia,serif;
-    // }
-    // `;
-    // CCSE.AddStyles(BulkBuyModifier.styles);
 
     // it's not easy to replace this code so we're going to snipe it
     eval("Game.Logic=" + Game.Logic.toString().replaceAll("(Game.keys[16] || Game.keys[17])", "false").replaceAll("(!Game.keys[16] && !Game.keys[17])", "false"));
-    // Game.BuildStore();
-    // Game.storeBulkSetMode(1);
-    // Game.storeBulkModifiedButton(0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `id="storeBulk"`, `id="storeBulk" style="display: flex;"`, 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `="Game.storeBulkButton(0);"`, `="Game.storeBulkSetMode(1);"`, 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `="Game.storeBulkButton(1);"`, `="Game.storeBulkSetMode(-1);"`, 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `				'<div id="storeBulk1" class="storePreButton storeBulkAmount" '+Game.clickStr+'="Game.storeBulkButton(2);">1</div>'+`, '', 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `				'<div id="storeBulk10" class="storePreButton storeBulkAmount" '+Game.clickStr+'="Game.storeBulkButton(3);">10</div>'+`, '', 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `				'<div id="storeBulk100" class="storePreButton storeBulkAmount" '+Game.clickStr+'="Game.storeBulkButton(4);">100</div>'+`, '', 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `				'<div id="storeBulkMax" class="storePreButton storeBulkAmount" '+Game.clickStr+'="Game.storeBulkButton(5);">'+loc("all")+'</div>'+`, '', 0);
+    CCSE.ReplaceCodeIntoFunction(`Game.BuildStore`, `				'</div>';`, `'';
+    for (let i = 0; i < Game.bulkValues.length; i++) {
+      const bulkval = Game.bulkValues[i];
+      str += '<div id="storeBulk'+ bulkval +'" class="storePreButton storeBulkAmount" ' + Game.clickStr + '="Game.storeBulkModifiedButton('+i+');">'+ bulkval +'</div>';
+    }
+    str += '</div>';`, 0);
+    // this is causing us problems so kill it
+    // it can live if we find a way to restore storeBulkMax without complications
+    // maybe call our two methods based on the legacy way of doing things
+    Game.storeBulkButton = function() {}
     Game.registerHook('logic', BulkBuyModifier.LogicCheck);
 
     Game.customOptionsMenu.push(BulkBuyModifier.customOptionsMenu);
@@ -55,7 +37,6 @@ BulkBuyModifier.launch = function(){
   }
 
   Game.bulkValueIndex = 0;
-  // Game.bulkValues = [1, 10, 50, 100, 200, 'Max'];
   Game.storeBulkSetMode = function(mode){
     // idk why you would call this with an invalid mode
     Game.buyMode = mode;
@@ -80,57 +61,6 @@ BulkBuyModifier.launch = function(){
 
     Game.storeToRefresh = 1;
     PlaySound('snd/tick.mp3');
-  }
-  //create the DOM for the store's buildings
-  BulkBuyModifier.OriginalBuildStore = Game.BuildStore;
-  Game.BuildStore = function () {
-    // console.log("fuck", Error().stack, Game.bulkValueIndex, Game.buyMode, Game.buyBulk, Game.bulkValues);
-    //if (typeof showAds!=='undefined') l('store').scrollTop=100;
-    var str = '';
-    str += '<div id="storeBulk" class="storePre" style="display: flex;" ' + Game.getTooltip(
-      '<div style="padding:8px;min-width:200px;text-align:center;font-size:11px;">' + loc("You can also press %1 to bulk-buy or sell %2 of a building at a time, or %3 for %4.", ['<b>' + loc("Ctrl") + '</b>', '<b>10</b>', '<b>' + loc("Shift") + '</b>', '<b>100</b>']) + '</div>'
-      , 'store') +
-      '>' +
-      '<div id="storeBulkBuy" class="storePreButton storeBulkMode" ' + Game.clickStr + '="Game.storeBulkSetMode(1);">' + loc("Buy") + '</div>' +
-      '<div id="storeBulkSell" class="storePreButton storeBulkMode" ' + Game.clickStr + '="Game.storeBulkSetMode(-1);">' + loc("Sell") + '</div>';
-
-    for (let i = 0; i < Game.bulkValues.length; i++) {
-      const bulkval = Game.bulkValues[i];
-      // if (bulkval == "Max"){
-        // str += '<div id="storeBulkMax" class="storePreButton storeBulkAmount" ' + Game.clickStr + '="Game.storeBulkSetMode(-1);Game.storeBulkModifiedButton('+i+');">' + loc("all") + '</div>';
-      // } else {
-        str += '<div id="storeBulk'+ bulkval +'" class="storePreButton storeBulkAmount" ' + Game.clickStr + '="Game.storeBulkModifiedButton('+i+');">'+ bulkval +'</div>';
-      // }
-    }
-      
-    str +=  '</div>';
-    for (var i in Game.Objects) {
-      var me = Game.Objects[i];
-      str += (Game.prefs.screenreader ? '<button aria-labelledby="ariaReader-product-' + (me.id) + '"' : '<div') + ' class="product toggledOff" ' + Game.getDynamicTooltip('Game.ObjectsById[' + me.id + '].tooltip', 'store') + ' id="product' + me.id + '"><div class="icon off" id="productIconOff' + me.id + '" style=""></div><div class="icon" id="productIcon' + me.id + '" style=""></div><div class="content"><div class="lockedTitle">???</div><div class="title productName" id="productName' + me.id + '"></div><span class="priceMult" id="productPriceMult' + me.id + '"></span><span class="price" id="productPrice' + me.id + '"></span><div class="title owned" id="productOwned' + me.id + '"></div>' + (Game.prefs.screenreader ? '<label class="srOnly" style="width:64px;left:-64px;" id="ariaReader-product-' + (me.id) + '"></label>' : '') + '</div>' +
-        /*'<div class="buySell"><div style="left:0px;" id="buttonBuy10-'+me.id+'">Buy 10</div><div style="left:100px;" id="buttonSell-'+me.id+'">Sell 1</div><div style="left:200px;" id="buttonSellAll-'+me.id+'">Sell all</div></div>'+*/
-        (Game.prefs.screenreader ? '</button>' : '</div>');
-    }
-    l('products').innerHTML = str;
-
-    // Game.storeBulkButton(-1);
-
-    /*var SellAllPrompt=function(id)
-    {
-      return function(id){Game.Prompt('<div class="block">Do you really want to sell your '+loc("%1 "+Game.ObjectsById[id].bsingle,LBeautify(Game.ObjectsById[id].amount))+'?</div>',[['Yes','Game.ObjectsById['+id+'].sell(-1);Game.ClosePrompt();'],['No','Game.ClosePrompt();']]);}(id);
-    }*/
-
-    for (var i in Game.Objects) {
-      var me = Game.Objects[i];
-      me.l = l('product' + me.id);
-
-      //these are a bit messy but ah well
-      if (!Game.touchEvents) {
-        AddEvent(me.l, 'click', function (what) { return function (e) { Game.ClickProduct(what); e.preventDefault(); }; }(me.id));
-      }
-      else {
-        AddEvent(me.l, 'touchend', function (what) { return function (e) { Game.ClickProduct(what); e.preventDefault(); }; }(me.id));
-      }
-    }
   }
 
   BulkBuyModifier.LogicCheck = function () {

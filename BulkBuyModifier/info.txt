@@ -3,7 +3,7 @@
 	"ID": "Bulk Buy Modifier",
 	"Author": "EntranceJew",
 	"Description": "Modifies the bulk buy bar allowing adding your own custom bulk purchase options.",
-	"ModVersion": 1,
+	"ModVersion": 1.1,
 	"GameVersion": 2.042,
 	"Date": "07/09/2021",
 	"Dependencies": ["CCSE"],
