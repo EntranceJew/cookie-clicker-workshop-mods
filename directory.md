@@ -22,6 +22,12 @@ contains the world renowned: **InsugarTrading**, **SpicedCookies**, and **Choose
 
 World famous mod for doing cookie related things.
 
+## TsFreddie's Mods
+
+### [CookieClickerSmoothFPS](https://github.com/TsFreddie/CookieClickerSmoothFPS)
+
+> Make your game silky smooth (maybe)
+
 ## Chakaa's Mods
 
 ### [Cookie Garden Helper Reloaded](https://github.com/Chakaa/cookie-garden-helper-reloaded)
