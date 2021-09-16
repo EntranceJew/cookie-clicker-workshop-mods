@@ -66,6 +66,14 @@ Press `ctrl-G` to spawn a Golden Cookie. Technically it will prompt every shimme
 
 You need to install this first, if you don't then I'll be upset!
 
+### [BulkBuyModifier](/BulkBuyModifier)
+
+Allows you to replace the buy/sell options with your own custom denominations. Use `shift` to step up a denomination, `ctrl` to move down a denomination, and `shift+ctrl` to swap between buy/sell mode.
+
+![modes](https://i.imgur.com/obA3dSE.png)
+
+![custom](https://i.imgur.com/i8Gw224.png)
+
 ### [EasterEggs](/EasterEggs)
 
 The same as [EnableParty](#enableparty), [GuaranteeToys](#guaranteetoys), and [GuaranteeWinklers](https://github.com/klattmose/klattmose.github.io/tree/master/CookieClicker/SteamMods/GuaranteeWinklers) but all as toggleable options. Has a cleanup function for disabling PARTY.
