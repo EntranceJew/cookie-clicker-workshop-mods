@@ -1,0 +1,12 @@
+{
+	"Name": "Spoiled Milk",
+	"ID": "SpoiledMilk",
+	"Author": "EntranceJew",
+	"Description": "Adds very unusual milk backgrounds.",
+	"ModVersion": 1,
+	"GameVersion": 2.042,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+  "AllowSteamAchievs": 1
+}

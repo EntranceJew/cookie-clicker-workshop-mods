@@ -66,6 +66,15 @@ Press `ctrl-G` to spawn a Golden Cookie. Technically it will prompt every shimme
 
 You need to install this first, if you don't then I'll be upset!
 
+### [SpoiledMilk](/SpoiledMilk)
+
+Adds ... alternative milk types.
+
+![beans milk](https://i.imgur.com/JB4IyYj.gif)
+> _Your milk is now beans._
+
+Includes a [template](/SpoiledMilk/img/_template.xcf) for editing your own milk types. Does not include custom icons yet.
+
 ### [RigidelAlert](/RigidelAlert)
 
 Adds an indicator to show whether or not Rigidel is satisfied with your current buildings, so that you can mute Temples/The Pantheon.
