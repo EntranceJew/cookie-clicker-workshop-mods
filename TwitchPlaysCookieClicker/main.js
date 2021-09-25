@@ -1,7 +1,7 @@
 if(TPCC === undefined) var TPCC = {};
 TPCC.name = 'Twitch Plays Cookie Clicker';
 TPCC.id = 'TwitchPlaysCookieClicker';
-TPCC.version = '1.0';
+TPCC.version = '1.01';
 TPCC.GameVersion = '2.042';
 
 TPCC.moveCursor = function(x, y) {
@@ -94,6 +94,8 @@ TPCC.launch = function(){
         Game.toQuit = false;
       }
     });
+
+    TPCC.postLoad();
 		
 		TPCC.isLoaded = 1;
 		if (Game.prefs.popups) Game.Popup(TPCC.name + ' loaded!');

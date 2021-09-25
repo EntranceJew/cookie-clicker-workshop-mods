@@ -1,7 +1,7 @@
 if(TwitchMod === undefined) var TwitchMod = {};
 TwitchMod.name = 'Twitch Mod';
 TwitchMod.id = 'TwitchMod';
-TwitchMod.version = '1.1';
+TwitchMod.version = '1.11';
 TwitchMod.GameVersion = '2.042';
 
 // TODO: allow user supplied alises?
@@ -301,12 +301,12 @@ TwitchMod.launch = function(){
 		if(TwitchMod.config[prefName]){
 			l(button).innerHTML = off;
 			TwitchMod.config[prefName] = 0;
-		}
-		else{
+		} else {
 			l(button).innerHTML = on;
 			TwitchMod.config[prefName] = 1;
 		}
 		l(button).className = 'option' + ((TwitchMod.config[prefName] ^ invert) ? '' : ' off');
+    Game.UpdateMenu();
 	}
 
   TwitchMod.ToggleCommand = function(prefName, button, on, off, invert){
@@ -319,6 +319,7 @@ TwitchMod.launch = function(){
       l(button+'_label').innerHTML = on;
 			TwitchMod.config.CMD_DISABLED[prefName] = 1;
 		}
+    Game.UpdateMenu();
 	}
 
   TwitchMod.ToggleCheck = function(prefName, button, on, off, invert){
@@ -326,12 +327,12 @@ TwitchMod.launch = function(){
 			l(button).removeAttribute('checked');
       l(button+'_label').innerHTML = off;
 			TwitchMod.config[prefName] = 0;
-		}
-		else{
+		} else {
 			l(button).setAttribute('checked','checked')
       l(button+'_label').innerHTML = on;
 			TwitchMod.config[prefName] = 1;
 		}
+    Game.UpdateMenu();
 	}
 	
 	if(CCSE.ConfirmGameVersion(TwitchMod.name, TwitchMod.version, TwitchMod.GameVersion)) Game.registerMod(TwitchMod.id, TwitchMod); //TwitchMod.init();
