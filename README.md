@@ -70,14 +70,14 @@ You need to install this first, if you don't then I'll be upset!
 
 Makes it so that whenever your "Final Claus" tab is visible, he detatches and slowly moves towards any golden cookies that spawn. Basically a "balanced" golden cookie auto-clicker. He has a set movement speed so on larger screens he may take more time to get to his target. If I can work together with an artist I'll add upgrades to change his behavior. When no golden cookies are active, he will wait near the Big Cookie.
 
-![hunting cookie](https://i.imgur.com/PLWZGny.gif)
+![hunting cookie](https://i.imgur.com/xVweoMT.gif)
 > _Diligently hunts down a golden cookie._
 
 ### [SpoiledMilk](/SpoiledMilk)
 
 Adds ... alternative milk types.
 
-![beans milk](https://i.imgur.com/JB4IyYj.gif)
+![beans milk](https://i.imgur.com/vCReXgj.gif)
 > _Your milk is now beans._
 
 Includes a [template](/SpoiledMilk/img/_template.xcf) for editing your own milk types. Does not include custom icons yet.
