@@ -1,0 +1,12 @@
+{
+	"Name": "Golden Cookie Hunter",
+	"ID": "GoldenCookieHunter",
+	"Author": "EntranceJew",
+	"Description": "A pet that hunts for Golden Cookies.",
+	"ModVersion": 1.0,
+	"GameVersion": 2.042,
+	"Date": "07/09/2021",
+	"Dependencies": ["CCSE"],
+	"Disabled": 1,
+  "AllowSteamAchievs": 1
+}

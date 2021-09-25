@@ -66,6 +66,13 @@ Press `ctrl-G` to spawn a Golden Cookie. Technically it will prompt every shimme
 
 You need to install this first, if you don't then I'll be upset!
 
+### [GoldenCookieHunter](/GoldenCookieHunter)
+
+Makes it so that whenever your "Final Claus" tab is visible, he detatches and slowly moves towards any golden cookies that spawn. Basically a "balanced" golden cookie auto-clicker. He has a set movement speed so on larger screens he may take more time to get to his target. If I can work together with an artist I'll add upgrades to change his behavior. When no golden cookies are active, he will wait near the Big Cookie.
+
+![hunting cookie](https://i.imgur.com/PLWZGny.gif)
+> _Diligently hunts down a golden cookie._
+
 ### [SpoiledMilk](/SpoiledMilk)
 
 Adds ... alternative milk types.
