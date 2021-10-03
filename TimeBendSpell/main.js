@@ -46,8 +46,8 @@ TimeBendSpell.launch = function(){
       let rate = TimeBendSpell.ComputeTime();
       TimeBendSpell.currentTimeRate = rate;
       Game.fps = (60 * (1/rate)) / 2;
-      Game.Objects["Bank"].minigame.secondsPerTick = 60 * rate;
-      Game.Objects['Farm'].minigame.secondsPerTick = 60 * rate;
+      if (Game.Objects["Bank"].minigame) Game.Objects["Bank"].minigame.secondsPerTick = 60 * rate;
+      if (Game.Objects['Farm'].minigame) Game.Objects['Farm'].minigame.secondsPerTick = 60 * rate;
       // TODO: affect the duration of things that capture a timestamp and then check it ater on,
       // instead of a constant fps-based lifetime decaying 
     }
