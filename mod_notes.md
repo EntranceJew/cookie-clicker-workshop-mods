@@ -6,6 +6,16 @@
 2. Reference [this guide by ThEnderYoshi](https://steamcommunity.com/sharedfiles/filedetails/?id=2592299023) to get familiar with the structure and layout of mods.
 3. Investigate the structure of mods on your `/local` folder. Make a copy of the `sampleMod` folder to get started.
 
+## Making Mods (staticvariablejames' advice)
+
+There is no tutorials on how to create mods.
+
+1. Learn [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), and a bit of [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
+2. Read the [source code for the game](https://orteil.dashnet.org/cookieclicker/main.js)
+3. Learn to hack the game in interesting ways, like rigging naturally spawned golden cookies to always give you Building Specials.
+4. Read the source code for existing mods [staticvariablejames](https://github.com/staticvariablejames/), [Klattmose](https://github.com/klattmose/klattmose.github.io/tree/master/CookieClicker/), [gamrguy](https://github.com/gamrguy/OmniscientCookies), [Cppkies-Team](https://github.com/Cppkies-Team/Cppkies), [ccideas-mod](https://github.com/hyoretsu/ccideas-mod), [Aktanusa](https://github.com/Aktanusa/CookieMonster/)
+5. Make your own mod :)
+
 ### Testing Mods
 
 - Add `--enable-logging` to the launch arguments to see silent / non-fatal errors.
