@@ -99,6 +99,12 @@ Makes managing your garden a little easier.
 
 > CookieToolsでは以下のことができます: 単位短縮機能の有効化, 単位の日本語化. これらは「オプション」タブの一番下にある「拡張設定」より設定が可能です。[[source]](https://github.com/hideki0403/CookieTools)
 
+## angelolz1's Mods
+
+### [CookieClickerRPC](https://github.com/angelolz1/CookieClickerRPC/releases/latest)
+
+> This Cookie Clicker mod will allow you to share your game stats through Discord Rich Presence! [[source]](https://github.com/angelolz1/CookieClickerRPC)
+
 ## And You?
 
 If you want your mod listed here then message `EntranceJew` in `#dashnet-modding`.
